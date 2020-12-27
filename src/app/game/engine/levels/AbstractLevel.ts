@@ -5,6 +5,6 @@ export abstract class AbstractLevel{
   constructor(public scene: Scene, public camera: Camera){
   }
 
-  abstract doTick()
+  abstract doTick(): void
 
 }

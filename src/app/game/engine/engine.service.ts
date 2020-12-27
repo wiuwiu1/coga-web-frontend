@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { OrthographicCamera, PerspectiveCamera, Scene, WebGLRenderer } from 'three';
 import { AbstractLevel } from './levels/AbstractLevel';
-import { CafeLevel } from './levels/CafeLevel';
+import { CafeLevel } from './levels/cafeLevel/CafeLevel';
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +18,7 @@ export class EngineService {
 
   addCafeLevel(): void {
     var aspect = window.innerWidth / window.innerHeight
-    var frustumLevel = 1
+    var frustumLevel = 5
 
     var scene = new Scene
     //todo render distance should be smaller
